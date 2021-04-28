@@ -1,0 +1,9 @@
+brecho\CartaoCredito.class
+brecho\Envio.class
+brecho\Estoque.class
+brecho\Boleto.class
+brecho\Cliente.class
+brecho\Produto.class
+brecho\Pedido.class
+controle\Principal.class
+brecho\Pagamento.class
