@@ -1,4 +1,10 @@
-
+/*
+ * Classname
+ *
+ * Version info
+ *
+ * Copyright notice
+ */
 package brecho;
 
 import java.util.ArrayList;
@@ -21,8 +27,10 @@ public class Cliente {
     private String email;
     private String enderecoEnvio;
     private String regiaoEnvio;
-    //implementacao do relacionamento de composição entre a classe cliente e pedido
-    //um cliente pode ter vários pedidos (atual e os já fechados como um histórico)
+    /*
+    implementacao do relacionamento de composição entre a classe cliente e pedido
+    um cliente pode ter vários pedidos (atual e os já fechados como um histórico)
+    */
     private ArrayList<Pedido> pedidos = new ArrayList<>();
 
     
@@ -49,7 +57,25 @@ public class Cliente {
         }
         
         System.out.println("Produtos encaminhados para envio.");
-    }
+
+        /*
+        for passando por todos os objetos do tipo Produto no carrinho "pedido"
+         que receberão a referencia p
+        como a arrayList "carrinho" é privada, então usa o método getCarrinho() pra acessá-la
+        ou seja, na prática no objeto pedido acessa a array carrinho
+         passando por todos os seus objetos do tipo Produto
+        */
+        for(Produto p:pedido.getCarrinho()){
+            /*
+            para acessar o estoque, tem que lembrar que todo produto está vinculado a um estoque
+            então produto.getEstoque() retorna o estoque daquele produto
+            então, usa o método retiraProduto(produto) do estoque
+            */
+            p.getEstoque().retiraProduto(p);
+        }
+
+
+}
 
 
     

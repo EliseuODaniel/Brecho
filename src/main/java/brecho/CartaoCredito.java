@@ -1,7 +1,13 @@
-
+/*
+ * Classname
+ *
+ * Version info
+ *
+ * Copyright notice
+ */
 package brecho;
 
-public class CartaoCredito extends Pagamento {
+public class CartaoCredito implements Pagamento {
 
 // Construtor
     public CartaoCredito(Pedido pedido, Envio envio, int numParcelas, double taxaJuros) {

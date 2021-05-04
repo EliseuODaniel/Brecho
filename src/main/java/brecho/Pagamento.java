@@ -1,8 +1,14 @@
-
+/*
+ * Classname
+ *
+ * Version info
+ *
+ * Copyright notice
+ */
 package brecho;
 
 //superclasse das classes Boleto e CartaoCredito
-public abstract class Pagamento {
+public interface Pagamento {
 
 // Método abstrato a ser implementado nas classes filhas
     public abstract double calculaPrecoTotal();

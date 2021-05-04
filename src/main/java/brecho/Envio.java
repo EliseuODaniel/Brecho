@@ -1,13 +1,21 @@
-
+/*
+ * Classname
+ *
+ * Version info
+ *
+ * Copyright notice
+ */
 package brecho;
 
 public class Envio {
     
     
-//construtor
-    //implementação do relacionamento de associação simples entre a classe Envio e a classe pedido
-    //recebe informações do pedido sobre a região de envio
-    public Envio(Pedido pedido, String formaEnvio) {
+/*
+    construtor
+    implementação do relacionamento de associação simples entre a classe Envio e a classe pedido
+    recebe informações do pedido sobre a região de envio
+    */
+public Envio(Pedido pedido, String formaEnvio) {
         this.regiao = pedido.getCliente().getRegiaoEnvio();
         this.formaEnvio = formaEnvio;
     } 
@@ -20,9 +28,11 @@ public class Envio {
 
 
     
-//método que calcula o envio conforme a forma de envio Correios/Transportadora e 
-//região do pedido (Norte, Sul, etc)
-    public void calcularEnvio() {
+/*
+método que calcula o envio conforme a forma de envio Correios/Transportadora e
+região do pedido (Norte, Sul, etc)
+*/
+public void calcularEnvio() {
         
         if ("Correios".equals(this.formaEnvio)) {
             

@@ -1,4 +1,10 @@
-
+/*
+ * Classname
+ *
+ * Version info
+ *
+ * Copyright notice
+ */
 package brecho;
 
 public class Produto {

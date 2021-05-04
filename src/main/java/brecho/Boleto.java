@@ -1,12 +1,21 @@
+/*
+ * Classname
+ *
+ * Version info
+ *
+ * Copyright notice
+ */
 
 package brecho;
 
-public class Boleto extends Pagamento {
+public class Boleto implements Pagamento {
 
-// Construtor
-    //implementação da associacao simples com a classe pedido e Envio
-    //recebe as informacoes das classes pedido e envio pra poder calcular o valor total
-    public Boleto(Pedido pedido, Envio envio) {
+/*
+     Construtor
+    implementação da associacao simples com a classe pedido e Envio
+    recebe as informacoes das classes pedido e envio pra poder calcular o valor total
+    */
+public Boleto(Pedido pedido, Envio envio) {
         this.pedido = pedido;
         this.envio = envio;
         this.numPedido = pedido.getNumPedido();

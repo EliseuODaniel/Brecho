@@ -1,14 +1,22 @@
-
+/*
+ * Classname
+ *
+ * Version info
+ *
+ * Copyright notice
+ */
 package brecho;
 
 import java.util.ArrayList;
 
 public class Pedido {
     
-// Construtor
-    //relação de composição entre a classe pedido e a classe cliente
-    //todo pedido pertence a um cliente
-    public Pedido(long numPedido, Cliente cliente) {
+/*
+     Construtor
+    relação de composição entre a classe pedido e a classe cliente
+    todo pedido pertence a um cliente
+    */
+public Pedido(long numPedido, Cliente cliente) {
         this.numPedido = numPedido;
         this.cliente = cliente;
     }

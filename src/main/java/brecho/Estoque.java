@@ -1,14 +1,22 @@
-
+/*
+ * Classname
+ *
+ * Version info
+ *
+ * Copyright notice
+ */
 package brecho;
 
 import java.util.ArrayList;
 
 public class Estoque {
     
-//atributos
-    //relação de composição da classe estoque e produto
-    //um estoque possui vários produtos - implementado com ArrayList
-    private final ArrayList<Produto> estoque = new ArrayList<>();
+/*
+    atributos
+    relação de composição da classe estoque e produto
+    um estoque possui vários produtos - implementado com ArrayList
+    */
+private final ArrayList<Produto> estoque = new ArrayList<>();
 
     
     public ArrayList<Produto> getEstoque() {
