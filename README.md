@@ -1,3 +1,3 @@
 # Brecho
 
-Backend de um brechó online em java.
+Projeto apresentado na matéria de POO de um brechó online.
